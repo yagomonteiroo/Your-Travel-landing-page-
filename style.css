@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color1:#151718;
+  --color2:#DB2777;
+}
+
+body{
+  height: 100vh;
+  background-image: url("assets/imgs/bg.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom center;
+  text-align: center;
+  padding-top: 200px;
+  font-family: 'Cinzel', serif;
+
+}
+
+
+h1{
+  color:var(--color1);
+  font-weight: 700;
+  font-size: 64px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+span{
+  color:var(--color2)
+}
+
+h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: calc(16px + 32px);
+  margin-top: 72px;
+
+}
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color1);
+}
+
+.link:hover {
+  color: var(--color2);
+  text-decoration:underline;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.button {
+  background-color: var(--color2);
+  color: white;
+  padding:16px 32px;
+  border-radius: 80px;
+}
+
+.button:hover{
+  color: white;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
